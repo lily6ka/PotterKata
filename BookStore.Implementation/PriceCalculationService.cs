@@ -22,26 +22,12 @@ namespace BookStore.Implementation
         {
             if (order != null && order.Books.Count > 0)
             {
-                int uniqueSeries = order.Books.GroupBy(_ => _.BookChapter).Count();
-                int discountRate;
-
-                if (DiscountRate.ContainsKey(uniqueSeries))
-                {
-                    discountRate = DiscountRate[uniqueSeries];
-                }
-                else
-                {
-                    discountRate = 0;
-                }
-
+                int uniqueSeries = order.Books.GroupBy(_ => _.Series).Count();
+                int discountRate = DiscountRate.ContainsKey(uniqueSeries) ? DiscountRate[uniqueSeries] : 0;
                 int booksCount = order.Books.Sum(_ => _.Quantity);
 
-                if (discountRate > 0)
-                {
-                    return CalculateFullPriceSeries(booksCount) - CalculateDiscountPrice(uniqueSeries, discountRate);
-                }
+                return CalculateFullPriceSeries(booksCount) - CalculateDiscountPrice(uniqueSeries, discountRate);
 
-                return CalculateFullPriceSeries(booksCount);
             }
             return 0;
         }

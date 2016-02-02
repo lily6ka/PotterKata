@@ -39,7 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BookEnum.cs" />
+    <Compile Include="BookSeriesEnum.cs" />
     <Compile Include="IBook.cs" />
     <Compile Include="IOrder.cs" />
     <Compile Include="IPriceCalculationService.cs" />

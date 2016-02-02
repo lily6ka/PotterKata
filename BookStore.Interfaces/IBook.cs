@@ -2,7 +2,7 @@
 {
     public interface IBook
     {
-        BookEnum BookChapter { get; set; }
+        BookSeriesEnum Series { get; set; }
 
         int Quantity { get; set; }
     }

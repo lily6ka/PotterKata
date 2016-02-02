@@ -9,7 +9,7 @@ namespace BookStore.Implementation
             Quantity = 1;
         }
 
-        public BookEnum BookChapter { get; set; }
+        public BookSeriesEnum Series { get; set; }
 
         public int Quantity { get; set; }
     }

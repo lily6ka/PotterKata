@@ -27,12 +27,12 @@ namespace BookStore.Tests
             {
                 Books = new List<IBook>
                 {
-                    new Book{ BookChapter = BookEnum.ChapterOne},
-                    new Book{ BookChapter = BookEnum.ChapterTwo, Quantity = 2},
-                    new Book{ BookChapter = BookEnum.ChapterThree, Quantity = 2},
-                    new Book{ BookChapter = BookEnum.ChapterFour, Quantity = 2},
-                    new Book{ BookChapter = BookEnum.ChapterFive, Quantity = 2},
-                    new Book{ BookChapter = BookEnum.ChapterSix}
+                    new Book{ Series = BookSeriesEnum.One},
+                    new Book{ Series = BookSeriesEnum.Two, Quantity = 2},
+                    new Book{ Series = BookSeriesEnum.Three, Quantity = 2},
+                    new Book{ Series = BookSeriesEnum.Four, Quantity = 2},
+                    new Book{ Series = BookSeriesEnum.Five, Quantity = 2},
+                    new Book{ Series = BookSeriesEnum.Six}
                }
             };
             decimal actual = _calculatorService.CalculateOrderPrice(_order);
@@ -65,7 +65,7 @@ namespace BookStore.Tests
             {
                 Books = new List<IBook>
                 {
-                    new Book{ BookChapter = BookEnum.ChapterOne, Quantity = 2}
+                    new Book{ Series = BookSeriesEnum.One, Quantity = 2}
                 }
             };
 
@@ -81,8 +81,8 @@ namespace BookStore.Tests
             {
                 Books = new List<IBook>
                 {
-                    new Book{ BookChapter = BookEnum.ChapterOne},
-                    new Book{ BookChapter = BookEnum.ChapterTwo}
+                    new Book{ Series = BookSeriesEnum.One},
+                    new Book{ Series = BookSeriesEnum.Two}
                 }
             };
 
@@ -98,9 +98,9 @@ namespace BookStore.Tests
            {
                Books = new List<IBook>
                 {
-                    new Book{ BookChapter = BookEnum.ChapterOne},
-                    new Book{ BookChapter = BookEnum.ChapterTwo},
-                    new Book{ BookChapter = BookEnum.ChapterThree},
+                    new Book{ Series = BookSeriesEnum.One},
+                    new Book{ Series = BookSeriesEnum.Two},
+                    new Book{ Series = BookSeriesEnum.Three},
                 }
            };
 
@@ -116,10 +116,10 @@ namespace BookStore.Tests
             {
                 Books = new List<IBook>
                 {
-                    new Book{ BookChapter = BookEnum.ChapterOne},
-                    new Book{ BookChapter = BookEnum.ChapterTwo},
-                    new Book{ BookChapter = BookEnum.ChapterThree},
-                    new Book{ BookChapter = BookEnum.ChapterFour},
+                    new Book{ Series = BookSeriesEnum.One},
+                    new Book{ Series = BookSeriesEnum.Two},
+                    new Book{ Series = BookSeriesEnum.Three},
+                    new Book{ Series = BookSeriesEnum.Four},
                 }
             };
             decimal actual = _calculatorService.CalculateOrderPrice(_order);
@@ -134,11 +134,11 @@ namespace BookStore.Tests
             {
                 Books = new List<IBook>
                 {
-                    new Book{ BookChapter = BookEnum.ChapterOne},
-                    new Book{ BookChapter = BookEnum.ChapterTwo},
-                    new Book{ BookChapter = BookEnum.ChapterThree},
-                    new Book{ BookChapter = BookEnum.ChapterFour},
-                    new Book{ BookChapter = BookEnum.ChapterFive},
+                    new Book{ Series = BookSeriesEnum.One},
+                    new Book{ Series = BookSeriesEnum.Two},
+                    new Book{ Series = BookSeriesEnum.Three},
+                    new Book{ Series = BookSeriesEnum.Four},
+                    new Book{ Series = BookSeriesEnum.Five},
                 }
             };
 
@@ -154,12 +154,12 @@ namespace BookStore.Tests
             {
                 Books = new List<IBook>
                 {
-                    new Book{ BookChapter = BookEnum.ChapterOne},
-                    new Book{ BookChapter = BookEnum.ChapterTwo},
-                    new Book{ BookChapter = BookEnum.ChapterThree},
-                    new Book{ BookChapter = BookEnum.ChapterFour},
-                    new Book{ BookChapter = BookEnum.ChapterFive},
-                    new Book{ BookChapter = BookEnum.ChapterSix},
+                    new Book{ Series = BookSeriesEnum.One},
+                    new Book{ Series = BookSeriesEnum.Two},
+                    new Book{ Series = BookSeriesEnum.Three},
+                    new Book{ Series = BookSeriesEnum.Four},
+                    new Book{ Series = BookSeriesEnum.Five},
+                    new Book{ Series = BookSeriesEnum.Six},
                 }
             };
 
@@ -175,13 +175,13 @@ namespace BookStore.Tests
             {
                 Books = new List<IBook>
                 {
-                    new Book{ BookChapter = BookEnum.ChapterOne},
-                    new Book{ BookChapter = BookEnum.ChapterTwo},
-                    new Book{ BookChapter = BookEnum.ChapterThree},
-                    new Book{ BookChapter = BookEnum.ChapterFour},
-                    new Book{ BookChapter = BookEnum.ChapterFive},
-                    new Book{ BookChapter = BookEnum.ChapterSix},
-                    new Book{ BookChapter = BookEnum.ChapterSeven}
+                    new Book{ Series = BookSeriesEnum.One},
+                    new Book{ Series = BookSeriesEnum.Two},
+                    new Book{ Series = BookSeriesEnum.Three},
+                    new Book{ Series = BookSeriesEnum.Four},
+                    new Book{ Series = BookSeriesEnum.Five},
+                    new Book{ Series = BookSeriesEnum.Six},
+                    new Book{ Series = BookSeriesEnum.Seven}
                 }
             };
 
