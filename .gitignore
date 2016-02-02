@@ -1,3 +1,5 @@
 BookStore.Interfaces/obj
 BookStore.Tests/obj
 BookStore.Implementation/obj
+packages
+BookStore.Tests/bin
